@@ -57,7 +57,7 @@ function sendCommand() {
     let command = document.getElementById("command").value;
     let logBox = document.getElementById("log-box");
 
-    fetch("https://ton-site.infinityfree.com/send_command.php", {
+    fetch("http://panel-admin-gmod.ct.ws/send_command.php", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: "server=" + encodeURIComponent(serverIp) + "&command=" + encodeURIComponent(command)
